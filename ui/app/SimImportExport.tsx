@@ -6,6 +6,8 @@ import {
 	JsonImporterDialog,
 	LINK_EXPORTER,
 	PAWN_EP_EXPORTER,
+	RotationMasterExporterDialog,
+	RotationMasterImporterDialog,
 	SIXTY_UPGRADES_EP_EXPORTER,
 	SixtyUpgradesImporterDialog,
 	WOWHEAD_GEAR_PLANNER_EXPORTER,
@@ -40,6 +42,7 @@ export const SimImportExport = () => {
 						<ImportExportItem label="60U TBC" dialog={SixtyUpgradesImporterDialog} />
 						<ImportExportItem label="WoWHead" dialog={WowheadImporterDialog} />
 						<ImportExportItem label="Addon" dialog={AddonImporterDialog} />
+						<ImportExportItem label="Rotation Master" dialog={RotationMasterImporterDialog} />
 					</>
 				)}
 			</ImportExportMenu>
@@ -52,6 +55,7 @@ export const SimImportExport = () => {
 						<ImportExportItem label="60U TBC EP" dialog={SixtyUpgradesExporterDialog} />
 						<ImportExportItem label="Pawn EP" dialog={PawnExporterDialog} />
 						<ImportExportItem label="CLI" dialog={CliExporterDialog} />
+						<ImportExportItem label="Rotation Master" dialog={RotationMasterExporterDialog} />
 					</>
 				)}
 			</ImportExportMenu>
