@@ -7751,10 +7751,92 @@
 						"import_button",
 						"reforge_warning"
 					]
+				},
+				"rotation_master": {
+					"type": "object",
+					"properties": {
+						"title": {
+							"type": "string"
+						},
+						"description": {
+							"type": "string"
+						},
+						"site_link": {
+							"type": "string"
+						},
+						"feature_description": {
+							"type": "string"
+						},
+						"instructions": {
+							"type": "string"
+						},
+						"check_button": {
+							"type": "string"
+						},
+						"replace_button": {
+							"type": "string"
+						},
+						"replace_hidden_button": {
+							"type": "string"
+						},
+						"success": {
+							"type": "string"
+						},
+						"result": {
+							"type": "string"
+						},
+						"fidelity": {
+							"type": "object",
+							"properties": {
+								"exact": {
+									"type": "string"
+								},
+								"approximate": {
+									"type": "string"
+								},
+								"lossy": {
+									"type": "string"
+								},
+								"unsupported": {
+									"type": "string"
+								}
+							},
+							"additionalProperties": false,
+							"required": ["exact", "approximate", "lossy", "unsupported"]
+						},
+						"report": {
+							"type": "object",
+							"properties": {
+								"attention": {
+									"type": "string"
+								},
+								"exact": {
+									"type": "string"
+								}
+							},
+							"additionalProperties": false,
+							"required": ["attention", "exact"]
+						}
+					},
+					"additionalProperties": false,
+					"required": [
+						"title",
+						"description",
+						"site_link",
+						"feature_description",
+						"instructions",
+						"check_button",
+						"replace_button",
+						"replace_hidden_button",
+						"success",
+						"result",
+						"fidelity",
+						"report"
+					]
 				}
 			},
 			"additionalProperties": false,
-			"required": ["title", "json", "wowhead", "addon"]
+			"required": ["title", "json", "wowhead", "addon", "rotation_master"]
 		},
 		"export": {
 			"type": "object",
@@ -7972,10 +8054,35 @@
 					},
 					"additionalProperties": false,
 					"required": ["gear", "talents", "rotation", "consumes", "external", "miscellaneous", "encounter"]
+				},
+				"rotation_master": {
+					"type": "object",
+					"properties": {
+						"title": {
+							"type": "string"
+						},
+						"description": {
+							"type": "string"
+						},
+						"warning_title": {
+							"type": "string"
+						},
+						"warning_message": {
+							"type": "string"
+						},
+						"generated": {
+							"type": "string"
+						},
+						"result": {
+							"type": "string"
+						}
+					},
+					"additionalProperties": false,
+					"required": ["title", "description", "warning_title", "warning_message", "generated", "result"]
 				}
 			},
 			"additionalProperties": false,
-			"required": ["title", "link", "json", "wowhead", "pawn_ep", "cli", "categories"]
+			"required": ["title", "link", "json", "wowhead", "pawn_ep", "cli", "categories", "rotation_master"]
 		},
 		"info": {
 			"type": "object",

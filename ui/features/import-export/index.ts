@@ -9,6 +9,8 @@ export {
 	SixtyUpgradesImporterDialog,
 	WowheadImporterDialog,
 } from './components/Importer';
+export { RotationMasterExporterDialog, RotationMasterImporterDialog, RotationMasterReport } from './components/RotationMaster';
+export type { RotationMasterReportProps } from './components/RotationMaster';
 export type { ImporterDialogProps, ImporterProps, ImportWarningProps } from './components/Importer';
 export {
 	CLI_EXPORTER,

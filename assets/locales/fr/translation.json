@@ -2192,6 +2192,28 @@
 				"title": "Problèmes de retouche",
 				"message": "Il y a des problèmes connus avec la retouche lors de l'utilisation de l'addon WSE. Assurez-vous toujours de vérifier vos retouches après l'importation."
 			}
+		},
+		"rotation_master": {
+			"title": "Import Rotation Master",
+			"description": "Remplacez la rotation par une rotation de Rotation Master, l'addon de World of Warcraft, ou de",
+			"site_link": "rotationmaster.neuromancy.net",
+			"feature_description": "Cela remplace la rotation APL et rien d'autre : l'équipement, les talents, les buffs, les consommables, la rencontre et les autres paramètres restent inchangés. Le rapport ci-dessous indique quelles étapes sont des copies exactes et lesquelles ont perdu quelque chose.",
+			"instructions": "Collez ci-dessous la chaîne d'export de la zone Export de l'addon ou du site, cliquez sur « Vérifier » pour voir ce qu'elle devient, puis sur « Remplacer la rotation ».",
+			"check_button": "Vérifier",
+			"replace_button": "Remplacer la rotation",
+			"replace_hidden_button": "Remplacer, masquer les étapes incomplètes",
+			"success": "Rotation remplacée : {{actions}} actions et {{prepull}} actions de pré-pull. Rien d'autre n'a été modifié.",
+			"result": "{{actions}} actions et {{prepull}} actions de pré-pull ({{summary}}).",
+			"fidelity": {
+				"exact": "Exact",
+				"approximate": "Approximatif",
+				"lossy": "Avec perte",
+				"unsupported": "Non pris en charge"
+			},
+			"report": {
+				"attention": "Étapes à vérifier ({{count}})",
+				"exact": "Copies exactes ({{count}})"
+			}
 		}
 	},
 	"export": {
@@ -2261,6 +2283,14 @@
 				"label": "Rencontre",
 				"tooltip": "Paramètres liés au combat."
 			}
+		},
+		"rotation_master": {
+			"title": "Export Rotation Master",
+			"description": "Exportez votre APL en rotation Rotation Master, à importer dans l'addon ou sur",
+			"warning_title": "La fidélité peut être perdue",
+			"warning_message": "Rotation Master suggère votre prochaine action en jeu ; il ne connaît ni la durée du combat, ni les temps d'incantation, ni l'état du simulateur. Les conditions correspondantes sont omises et les étapes qui ne sont pas des copies exactes sont exportées désactivées. Vérifiez le rapport avant de vous y fier.",
+			"generated": "Votre rotation est {{type}} : le simulateur en a généré une liste de priorités, et c'est celle-ci qui a été exportée.",
+			"result": "{{steps}} étapes, {{disabled}} désactivées ({{summary}})."
 		}
 	},
 	"info": {
